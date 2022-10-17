@@ -26,7 +26,7 @@ class _InicioState extends State<Inicio> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("puto"),
+        title: Text("titulo"),
       ),
       body: Center(
         child: Text("contenido"),
