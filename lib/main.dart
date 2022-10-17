@@ -28,8 +28,19 @@ class _InicioState extends State<Inicio> {
       appBar: AppBar(
         title: Text("titulo"),
       ),
-      body: Center(
-        child: Text("contenido"),
+      body: ListView(
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(20.0),
+            child: Image.network(
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgfHFbLjcwxqFpM85eTqsELIIZySAi6uOWQ&usqp=CAU"),
+          ),
+          Container(
+            padding: const EdgeInsets.all(20.0),
+            child: Image.network(
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgfHFbLjcwxqFpM85eTqsELIIZySAi6uOWQ&usqp=CAU"),
+          )
+        ],
       ),
     );
   }
