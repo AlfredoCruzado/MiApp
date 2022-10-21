@@ -34,21 +34,18 @@ class _InicioState extends State<Inicio> {
           children: <Widget>[
             Container(
               width: MediaQuery.of(context).size.width * 0.5,
-              child: Text(
-                "titulo1",
-                textAlign: TextAlign.center,
-              ),
+              child: Text("titulo1", textAlign: TextAlign.center),
             ),
-            Text(
-              "titulo2",
-              textAlign: TextAlign.center,
-            ),
-            Container(
+            Center(
               child: RaisedButton(
-                  child: Text("hola"),
-                  child:
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.access_time),
+                      Text("Now"),
+                    ],
+                  ),
                   onPressed: () {
-                    var perro = DateTime.now()
+                    var perro = DateTime.now();
                     print(perro);
                   }),
             )
